@@ -3,8 +3,14 @@ public class Box {
     double height;
     double length;
 
-    public void showVolume(){
-        double volume = width * height * length;
-        System.out.println(volume);
+    public double volume(){
+        return  width * height * length;
+
+    }
+
+    public void setDimens(double width,double height, double length){
+        this.width =width;
+        this.height =height;
+        this.length =length;
     }
 }
